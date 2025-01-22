@@ -9,127 +9,130 @@ class CustomError(Exception):
 
 
 # Function to demonstrate various keywords and built-ins
-def example_function():
-    # Boolean values
-    a = True
-    b = False
+# Boolean values
+a = True
+b = False
 
-    # Conditional statements
-    if a and not b:
-        print("a is True and b is False")
+# Conditional statements
+if a and not b:
+    print("a is True and b is False")
 
-    # Looping with for and while
-    for i in range(5):
-        print(f"Loop iteration {i}")
+# Looping with for and while
+for i in range(5):
+    print(f"Loop iteration {i}")
 
-    count = 0
-    while count < 5:
-        print(f"While loop count: {count}")
-        count += 1
+count = 0
+while count < 5:
+    print(f"While loop count: {count}")
+    count += 1
 
-    # Using try, except, finally
-    try:
-        x = 1 / 0
-    except ZeroDivisionError as e:
-        print(f"Caught an exception: {e}")
-    finally:
-        print("This will always execute")
+# Using try, except, finally
+try:
+    x = 1 / 0
+except ZeroDivisionError as e:
+    print(f"Caught an exception: {e}")
+finally:
+    print("This will always execute")
 
-    # Using with statement for file operations
-    with open("example.txt", "w") as file:
-        file.write("Hello, world!")
+# Using with statement for file operations
+with open("example.txt", "w") as file:
+    file.write("Hello, world!")
 
-    # Defining and using a lambda function
-    square = lambda x: x * x
-    print(f"Square of 3 is {square(3)}")
+# Defining and using a lambda function
+square = lambda x: x * x
+print(f"Square of 3 is {square(3)}")
 
-    # Using list comprehensions
-    squares = [x * x for x in range(10)]
-    print(f"Squares: {squares}")
+# Using list comprehensions
+squares = [x * x for x in range(10)]
+print(f"Squares: {squares}")
 
-    # Using built-in functions
-    print(f"Absolute value of -5: {abs(-5)}")
-    print(f"All elements are true: {all([True, True, False])}")
-    print(f"Any element is true: {any([False, False, True])}")
-    print(f"Binary representation of 10: {bin(10)}")
-    print(f"Character for ASCII 97: {chr(97)}")
-    print(f"Divmod of 10 by 3: {divmod(10, 3)}")
-    print(f"Enumerate list: {list(enumerate(['a', 'b', 'c']))}")
-    print(f"Filter even numbers: {list(filter(lambda x: x % 2 == 0, range(10)))}")
-    print(f"Map squares: {list(map(lambda x: x * x, range(10)))}")
-    print(f"Max of [1, 2, 3]: {max([1, 2, 3])}")
-    print(f"Min of [1, 2, 3]: {min([1, 2, 3])}")
-    print(f"Sum of [1, 2, 3]: {sum([1, 2, 3])}")
-    print(f"Sorted list: {sorted([3, 1, 2])}")
+# Using built-in functions
+print(f"Absolute value of -5: {abs(-5)}")
+print(f"All elements are true: {all([True, True, False])}")
+print(f"Any element is true: {any([False, False, True])}")
+print(f"Binary representation of 10: {bin(10)}")
+print(f"Character for ASCII 97: {chr(97)}")
+print(f"Divmod of 10 by 3: {divmod(10, 3)}")
+print(f"Enumerate list: {list(enumerate(['a', 'b', 'c']))}")
+print(f"Filter even numbers: {list(filter(lambda x: x % 2 == 0, range(10)))}")
+print(f"Map squares: {list(map(lambda x: x * x, range(10)))}")
+print(f"Max of [1, 2, 3]: {max([1, 2, 3])}")
+print(f"Min of [1, 2, 3]: {min([1, 2, 3])}")
+print(f"Sum of [1, 2, 3]: {sum([1, 2, 3])}")
+print(f"Sorted list: {sorted([3, 1, 2])}")
 
-    # Using global and nonlocal
-    global_var = "I am global"
+# Using global and nonlocal
+global_var = "I am global"
 
-    def outer_function():
-        outer_var = "I am outer"
 
-        def inner_function():
-            nonlocal outer_var
-            outer_var = "I am changed outer"
-            print(outer_var)
+def outer_function():
+    outer_var = "I am outer"
 
-        inner_function()
+    def inner_function():
+        nonlocal outer_var
+        outer_var = "I am changed outer"
         print(outer_var)
 
-    outer_function()
-    print(global_var)
+    inner_function()
+    print(outer_var)
 
-    # Using assert
-    assert a == True, "a should be True"
 
-    # Using pass, break, continue
-    for i in range(10):
-        if i == 5:
-            continue
-        if i == 8:
-            break
-        print(i)
-    else:
-        pass
+outer_function()
+print(global_var)
 
-    # Using del
-    my_list = [1, 2, 3]
-    del my_list[1]
-    print(my_list)
+# Using assert
+assert a == True, "a should be True"
 
-    # Using yield in a generator
-    def generator_function():
-        yield 1
-        yield 2
-        yield 3
+# Using pass, break, continue
+for i in range(10):
+    if i == 5:
+        continue
+    if i == 8:
+        break
+    print(i)
+else:
+    pass
 
-    for value in generator_function():
-        print(value)
+# Using del
+my_list = [1, 2, 3]
+del my_list[1]
+print(my_list)
 
-    # Using isinstance and issubclass
-    print(isinstance(5, int))
-    print(issubclass(bool, int))
 
-    # Using exec to execute a string of code
-    exec("print('Hello from exec')")
+# Using yield in a generator
+def generator_function():
+    yield 1
+    yield 2
+    yield 3
 
-    # Using eval to evaluate a string as an expression
-    result = eval("5 + 5")
-    print(f"Result of eval: {result}")
 
-    # Using format for string formatting
-    formatted_string = "Hello, {}!".format("world")
-    print(formatted_string)
+for value in generator_function():
+    print(value)
 
-    # Using frozenset
-    fs = frozenset([1, 2, 3])
-    print(fs)
+# Using isinstance and issubclass
+print(isinstance(5, int))
+print(issubclass(bool, int))
 
-    # Using help to get documentation
-    help(print)
+# Using exec to execute a string of code
+exec("print('Hello from exec')")
 
-    # Using id to get the identity of an object
-    print(f"ID of a: {id(a)}")
+# Using eval to evaluate a string as an expression
+result = eval("5 + 5")
+print(f"Result of eval: {result}")
+
+# Using format for string formatting
+formatted_string = "Hello, {}!".format("world")
+print(formatted_string)
+
+# Using frozenset
+fs = frozenset([1, 2, 3])
+print(fs)
+
+# Using help to get documentation
+help(print)
+
+# Using id to get the identity of an object
+print(f"ID of a: {id(a)}")
 
 
 # This code demonstrates the use of various Python keywords, variables, classes, and functions.
