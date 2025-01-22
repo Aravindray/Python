@@ -39,8 +39,8 @@ with open("example.txt", "w") as file:
     file.write("Hello, world!")
 
 # Defining and using a lambda function
-square = lambda x: x * x
-print(f"Square of 3 is {square(3)}")
+# square = lambda x: x * x
+# print(f"Square of 3 is {square(3)}")
 
 # Using list comprehensions
 squares = [x * x for x in range(10)]
@@ -62,7 +62,7 @@ print(f"Sum of [1, 2, 3]: {sum([1, 2, 3])}")
 print(f"Sorted list: {sorted([3, 1, 2])}")
 
 # Using global and nonlocal
-global_var = "I am global"
+global_var = "I am global user"
 
 
 def outer_function():
@@ -81,7 +81,7 @@ outer_function()
 print(global_var)
 
 # Using assert
-assert a == True, "a should be True"
+# assert a == True, "a should be True"
 
 # Using pass, break, continue
 for i in range(10):
@@ -245,7 +245,7 @@ class Dog(Animal):
 def example_function():
     # Using various keywords and variables
     try:
-        animal = Animal("Generic Animal")
+        # animal = Animal("Generic Animal")
         dog = Dog("Buddy", 5)
 
         for i in range(3):
@@ -269,11 +269,11 @@ if __name__ == "__main__":
     with open("output.txt", "w") as file:
         file.write("Example output\n")
 
-    lambda_function = lambda x: x * 2
-    print(lambda_function(10))
+    # lambda_function = lambda x: x * 2
+    # print(lambda_function(10))
 
     # Using assert
-    assert lambda_function(5) == 10, "Lambda function test failed"
+    # assert lambda_function(5) == 10, "Lambda function test failed"
 
 # Example code containing all Python keywords, variables, classes, and functions
 
@@ -331,7 +331,7 @@ def safe_divide(a, b):
 
 
 # Lambda function
-square = lambda x: x * x  # lambda
+# square = lambda x: x * x  # lambda
 
 # with and as example (context manager)
 with open("example.txt", "w") as file:
