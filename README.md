@@ -1,2 +1,2 @@
 # Python
-Python - Tips &amp; Tricks
+Python - Notes, Tips &amp; Tricks
