@@ -1,0 +1,3 @@
+# Encapsulation
+
+Yet to add...

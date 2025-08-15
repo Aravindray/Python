@@ -1,0 +1,30 @@
+# Need to add
+
+- Creational Patterns
+    - [The Factory Pattern]()
+      - [Factory Method]()
+      - [Abstract Factory]()
+    - [The Builder Pattern]()
+    - [The Prototype Pattern]()
+    - [Singleton]() - [Ref](https://refactoring.guru/design-patterns/singleton)
+- Structural Patterns
+    - [The Adapter Pattern]()
+    - [The Decorator Pattern]()
+    - [The Facade Pattern]()
+    - [The Flyweight Pattern]()
+    - [The Proxy Pattern]()
+    - [Bridge]() - [Ref](https://refactoring.guru/design-patterns/bridge)
+    - [Composite]() - [Ref](https://refactoring.guru/design-patterns/composite)
+- Behavioral Patterns
+    - [The Chain of Responsibility Pattern]()
+    - [The Command Pattern]()
+    - [The Observer Pattern]()
+    - [The State Pattern]()
+    - [The Strategy Pattern]()
+    - [The Template Pattern]()
+    - [Iterator]() - [Ref](https://refactoring.guru/design-patterns/iterator)
+    - [Mediator]() - [Ref](https://refactoring.guru/design-patterns/mediator)
+    - [Memento]() - [Ref](https://refactoring.guru/design-patterns/memento)
+    - [Visitor]() - [Ref](https://refactoring.guru/design-patterns/visitor)
+- [The Model-View-Controller Pattern](#)
+- [The Interpreter Pattern](#)
