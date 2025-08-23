@@ -8,7 +8,7 @@ Learning Doc, Tips & Tricks
   - └── [1-What-is-Python.md](./1-Introduction/1-What-is-Python.md)
   - └── [2-Fundamentals.md](./1-Introduction/2-Fundamentals.md)
 - ├── 2-Clean-Code /
-  - └── [Clean-Code.md](./2-Clean-Code/Clean-Code.md)
+  - └── [Clean-Code.md](Clean-Code.md)
 - ├── 3-Data-Structures /
   - └── [DS-Intro.md](./3-Data-Structures/DS-Intro.md)
 - ├── 4-Algorithms /

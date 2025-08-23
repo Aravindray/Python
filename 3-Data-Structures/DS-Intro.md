@@ -1,5 +1,17 @@
 # Data Structures
 
+## Need to add
+
+1. List [array]
+2. Tuple
+3. Dictionary
+4. Set
+5. Queue
+6. Double Ended Queue (Deque)
+7. Stack
+8. Linked List
+9. Doubly Linked List
+
 #### 1. Stack
 
 Based on Last In, First Out (LIFO) arrangement, new elements are inserted at top of the stack one at the time and user can delete the top element of the stack one at time.
